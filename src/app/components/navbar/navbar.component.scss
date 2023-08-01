@@ -1,0 +1,32 @@
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 0px;
+    background-color: #01003a;
+    .content{
+        display: flex;
+        justify-content: space-between;
+        a{
+            padding: 0 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: rgb(255, 255, 255);
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            margin-right: 40px;
+            .ng-fa-icon{
+                color: white;
+            }
+            p{
+                margin: 0;
+                color: rgb(154, 201, 255);
+            }
+        }
+    }
+}

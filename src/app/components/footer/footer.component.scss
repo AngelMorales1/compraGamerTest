@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+    background-color: #01003a;
+    margin-top: auto;
+    .content {
+        display: flex;
+        justify-content: center;
+        color: white;
+
+        h4 {
+            margin: 10px;
+
+            a {
+                text-decoration: none;
+                color: #00867b;
+            }
+        }
+    }
+}
