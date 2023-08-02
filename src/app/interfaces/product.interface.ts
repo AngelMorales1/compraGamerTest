@@ -10,6 +10,7 @@ export interface Product {
     stock:           number;
     garantia:        number;
     iva:             number;
+    nombreCategoria?: string;
 }
 
 export interface Image {

@@ -22,10 +22,17 @@ export class HomeComponent {
     this.productsService.getProducts().subscribe((resp) => {
       this.products = resp
       this.sortedProds = resp
+      console.log(resp)
     })
 
     this.productsService.getCategories().subscribe((resp)=> {
       this.categories = resp
+      this.products.forEach(product => {
+        const subcategoria = resp.find((sub:Category) => sub.id === product.id_subcategoria);
+        if (subcategoria) {
+          product.nombreCategoria = subcategoria.nombre;
+        }
+      });
     })
   }
 
