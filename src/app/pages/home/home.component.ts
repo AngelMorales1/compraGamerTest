@@ -22,7 +22,6 @@ export class HomeComponent {
     this.productsService.getProducts().subscribe((resp) => {
       this.products = resp
       this.sortedProds = resp
-      console.log(resp)
     })
 
     this.productsService.getCategories().subscribe((resp)=> {
