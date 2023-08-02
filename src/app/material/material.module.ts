@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 const MaterialComponents = [
-  MatGridListModule,
-  MatCardModule,
-  MatButtonModule
+  MatButtonModule,
+  MatSelectModule,
+  MatInputModule,
+  MatFormFieldModule,
+  MatSnackBarModule
 ]
 
 @NgModule({
