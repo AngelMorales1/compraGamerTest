@@ -50,12 +50,10 @@ export class LoginComponent {
   get phone() {
     return this.loginForm.get('phone');
   }
-
   
   get dni() {
     return this.loginForm.get('phone');
   }
-
 
   get password() {
     return this.loginForm.get('password');

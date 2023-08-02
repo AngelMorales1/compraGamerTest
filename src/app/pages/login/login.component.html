@@ -38,6 +38,8 @@
                 <mat-label>DNI</mat-label>
                 <input matInput formControlName="dni">
                 <mat-error *ngIf="dni?.touched && dni?.errors?.['required']">El DNI es requerido</mat-error>
+                <mat-error *ngIf="dni?.touched && dni?.errors?.['minlength']">El DNI debe ser de al
+                    menos 7 caracteres</mat-error>
             </mat-form-field>
 
             <mat-form-field>
